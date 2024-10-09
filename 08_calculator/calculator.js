@@ -19,10 +19,11 @@ const power = function (base, exponent) {
 };
 
 const factorial = function (number) {
-  let factorial;
-  while (number > 0) {
-    factorial += number;
+  if (number === 0 || number === 1) return 1;
+  let factorial = number;
+  while (number > 1) {
     number--;
+    factorial = factorial * number;
   }
   return factorial;
 };

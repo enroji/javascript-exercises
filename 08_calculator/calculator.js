@@ -18,14 +18,13 @@ const power = function (base, exponent) {
   return Math.pow(base, exponent);
 };
 
-const factorial = function (number) {
-  if (number === 0 || number === 1) return 1;
-  let factorial = number;
-  while (number > 1) {
-    number--;
-    factorial = factorial * number;
+const factorial = function (n) {
+  if (n === 0) return 1;
+  let product = 1;
+  for (let i = n; i > 0; i--) {
+    product *= i;
   }
-  return factorial;
+  return product;
 };
 
 // Do not edit below this line

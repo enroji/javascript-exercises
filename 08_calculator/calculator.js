@@ -18,7 +18,14 @@ const power = function (base, exponent) {
   return Math.power(base, exponent);
 };
 
-const factorial = function () {};
+const factorial = function (number) {
+  let factorial;
+  while (number > 0) {
+    factorial += number;
+    number--;
+  }
+  return factorial;
+};
 
 // Do not edit below this line
 module.exports = {
